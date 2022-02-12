@@ -1,3 +1,5 @@
+# Challenge 1
+
 library(dplyr)
 
 mecha_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
@@ -5,3 +7,21 @@ mecha_table <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors =
 lm(formula = vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg, data = mecha_table)
 
 summary(lm(formula = vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg, data = mecha_table))
+
+
+
+# Challenge 2
+
+scoil_table <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+
+total_summary <- scoil_table %>% summarize(Mean_PSI=mean(PSI),
+                                          Median_PSI=median(PSI),
+                                          Var_PSI=var(PSI),
+                                          Std_Dev_PSI=sd(PSI),
+                                          Num_Coil=n(), .groups = 'keep') 
+
+lot_summary <- scoil_table  %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),
+                                                                         Median_PSI=median(PSI),
+                                                                         Var_PSI=var(PSI),
+                                                                         Std_Dev_PSI=sd(PSI),
+                                                                         Num_Coil=n(), .groups = 'keep') 
