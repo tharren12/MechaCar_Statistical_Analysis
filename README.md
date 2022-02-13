@@ -107,3 +107,14 @@ alternative hypothesis: true mean is not equal to 1500
 sample estimates:
 mean of x 
   1496.14 
+
+
+## Study Design: MechaCar vs Competition
+
+Due to fluctuating and often rising gas prices, fuel efficiency is a very useful metric and is often a consideration of many car buyers.
+
+The null hypothesis is that there is no statistically significant difference between MechaCar's city fuel efficiency and the city fuel efficiency of a similarly sized and powered car that is produced by the competition.
+
+Testing Two-sample t-test, as it enables us to compare MechaCar's city fuel efficiency to the competition's city fuel efficiency and calculate statistical significance.
+
+Data For MechaCar and comparable models, data should include vehicle weight, vehicle length, city miles per gallon, and number of engine cylinders.
