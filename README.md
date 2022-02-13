@@ -109,7 +109,7 @@ mean of x
   1496.14 
 
 
-## Study Design: MechaCar vs Competition
+## Study Design: MechaCar vs Competition - Deliverable 4
 
 Due to fluctuating and often rising gas prices, fuel efficiency is a very useful metric and is often a consideration of many car buyers.
 
